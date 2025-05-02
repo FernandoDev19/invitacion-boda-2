@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación boda</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- My Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container-md mx-auto p-0">
+      <div class="d-flex flex-column align-items-center gap-2 px-4 mb-5">
+        <img
+          class="w-100"
+          src="assets/images/flores.png"
+          alt="Flores top"
+          id="flores-top"
+        />
+        <p class="text-primary" style="font-weight: 600">¡Nos casamos!</p>
+        <h1
+          class="display-1 text-stars-and-love text-primary fw-bolder text-center mb-4"
+        >
+          Isaura<br />
+          <span style="font-family: nunito; font-size: 2.3rem">&</span><br />
+          Jonathan
+        </h1>
+
+        <span class="text-secondary text-center" style="font-size: 0.8rem"
+          >Presiona el <i class="fas fa-heart text-primary"></i> para escuchar
+          nuestra canción</span
+        >
+
+        <audio id="audio" src="assets/music/music.mp3"></audio>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="thumb" id="thumb"></div>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+          <i class="fas fa-redo" onclick="repetir()"></i>
+          <i class="fas fa-backward" onclick="retroceder()"></i>
+          <i id="play-pause" class="fas fa-heart" onclick="togglePlay()"></i>
+          <i class="fas fa-forward" onclick="adelantar()"></i>
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+
+      <img
+        class="w-100 mb-4"
+        src="assets/images/transp3.png"
+        alt="pareja transparente"
+      />
+
+      <p
+        class="text-secondary px-5 text-center"
+        style="font-size: 0.9rem; font-weight: 600"
+      >
+        El amor nunca se da por vencido, jamás pierde la fe, siempre tiene
+        esperanza y se mantienen firme en toda circunstancia.
+      </p>
+      <span
+        class="w-100 mb-3 d-block text-center text-primary fw-bold"
+        style="
+          font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif !important;
+        "
+      >
+        1 Corintios 13,7
+      </span>
+
+      <div class="d-flex justify-content-center mb-3">
+        <img width="80" src="assets/icons/pareja.png" alt="Pareja icon" />
+      </div>
+
+      <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
+        Con la bendición de Dios y nuestros queridos padres
+      </h2>
+
+      <div class="text-center text-secondary mb-5">
+        <p><strong>Padres de la Novia</strong></p>
+        <p class="mb-4">
+          Javier Flórez Gutiérrez<br />
+          Erica Caballero Romero
+        </p>
+        <p>
+          <strong> Padres del Novio </strong>
+        </p>
+        <p>
+          Isnaldo Bolaño Silvera<br />
+          Zoraida Meza Zambrano (+)
+        </p>
+      </div>
+
+      <img
+        class="w-100 mb-3"
+        src="assets/images/transp1.png"
+        alt="Flores transparente"
+      />
+
+      <div class="d-flex justify-content-center mb-4">
+        <img width="80" src="assets/icons/Anillos.png" alt="Anillos icon" />
+      </div>
+
+      <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
+        Tenemos el gusto de invitarte a Nuestra Boda
+      </h2>
+
+      <div class="text-secondary px-3 mb-5">
+        <span class="d-block fs-5 text-center fw-bold mb-1">JUNIO</span>
+        <div class="d-flex gap-3 justify-content-center align-items-center">
+          <p
+            class="m-0 py-2 fw-bold fs-2 text-center"
+            style="
+              width: 100%;
+              border-top: 0.5px solid #215282;
+              border-bottom: 0.5px solid #215282;
+            "
+          >
+            Sábado
+          </p>
+          <p class="m-0 text-primary display-3 fw-bold">14</p>
+          <p
+            class="m-0 py-2 fw-bold fs-2 text-center"
+            style="
+              width: 100%;
+              border-top: 0.5px solid #215282;
+              border-bottom: 0.5px solid #215282;
+            "
+          >
+            2025
+          </p>
+        </div>
+      </div>
+
+      <p class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
+        Faltan
+      </p>
+
+      <div class="d-flex justify-content-evenly mb-4">
+        <div id="contador-regresivo-days" class="d-flex flex-column">
+          <h2 id="days-number" class="fs-5 text-center text-secondary"></h2>
+          <small class="text-center text-secondary" style="font-size: 0.8rem"
+            >DIAS</small
+          >
+        </div>
+        <div id="contador-regresivo-hours" class="d-flex flex-column">
+          <h2 id="hours-number" class="fs-5 text-center text-secondary"></h2>
+          <small class="text-center text-secondary" style="font-size: 0.8rem"
+            >HORAS</small
+          >
+        </div>
+        <div id="contador-regresivo-minutes" class="d-flex flex-column">
+          <h2 id="minutes-number" class="fs-5 text-center text-secondary"></h2>
+          <small class="text-center text-secondary" style="font-size: 0.8rem"
+            >MINUTOS</small
+          >
+        </div>
+        <div id="contador-regresivo-seconds" class="d-flex flex-column">
+          <h2 id="seconds-number" class="fs-5 text-center text-secondary"></h2>
+          <small class="text-center text-secondary" style="font-size: 0.8rem"
+            >SEGUNDOS</small
+          >
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="d-flex justify-content-center mb-1">
+          <img width="70" src="assets/icons/Iglesia.png" alt="Iglesia icon" />
+        </div>
+        <p class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
+          Ceremonia Religiosa
+        </p>
+        <p class="text-secondary text-center">
+          Hora: 6:00pm<br />
+          Parroquia San José<br />
+          Sitionuevo - Magdalena
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <p class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
+          Recepción
+        </p>
+        <div class="d-flex justify-content-center mb-1">
+          <img width="50" src="assets/icons/Brindis.png" alt="Brindis icon" />
+        </div>
+        <p class="text-secondary text-center">
+          Hora: 8:00pm<br />
+          Centro de eventos Los Mangos<br />
+          Sitionuevo - Magdalena
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <img width="50" src="assets/icons/lugar.png" alt="lugar icon" />
+      </div>
+
+      <div class="mb-5">
+        <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-2">
+          Código de vestimenta
+        </h2>
+        <div class="d-flex justify-content-center mb-1">
+          <img
+            width="60"
+            src="assets/icons/Código vestimenta.png"
+            alt="Código vestimenta icon"
+          />
+        </div>
+        <p class="text-secondary text-center">
+          Elegante<br />
+          Reservado el color azul para las damas de honor.
+        </p>
+      </div>
+
+      <img
+        class="w-100 mb-3"
+        src="assets/images/transp2.png"
+        alt="Anillos transparente"
+      />
+
+      <div class="mb-4">
+        <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-2">
+          Regalos
+        </h2>
+        <div class="d-flex justify-content-center mb-1">
+          <img width="60" src="assets/icons/regalo.png" alt="Regalo icon" />
+        </div>
+        <p class="text-secondary text-center">Obsequio o Lluvia de sobre</p>
+      </div>
+
+      <div class="mb-4 mx-3">
+        <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-2">
+          Buzón de deseos
+        </h2>
+        <p class="text-secondary text-center">
+          Nos encantaría leer tus buenos deseos ¡Déjanos un mensaje que siempre
+          recordaremos!
+        </p>
+        <div class="d-flex justify-content-center mb-1">
+          <img width="50" src="assets/icons/sobre.png" alt="Sobre icon" />
+        </div>
+      </div>
+
+      <div class="mb-4 mx-3">
+        <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-2">
+          Confirmar asistencia
+        </h2>
+        <p class="text-secondary text-center">
+          Tu presencia es muy importante para nosotros, por favor confirmanos
+        </p>
+        <div class="d-flex justify-content-center mb-1">
+          <img width="40" src="assets/icons/Whatsapp.png" alt="Whatsapp icon" />
+        </div>
+      </div>
+
+      <div class="text-secondary mx-3 text-center mb-5">
+        <div class="d-flex justify-content-center mb-1">
+          <img
+            width="100"
+            src="assets/images/circulo nombres.png"
+            alt="Circulo nombres icon"
+          />
+        </div>
+        <p>
+          Le damos Gracias a nuestro buen Dios por permitir que nuestras vidas
+          se unieran, por inspirar siempre nuestra historia y por enseñarnos a
+          amar como solo él sabe hacerlo.
+        </p>
+      </div>
+
+      <p class="text-primary text-center fw-bold" style="font-weight: 600">
+        ¡Te esperamos!
+      </p>
+      <div class="position-relative overflow-hidden" style="height: 50px;">
+        <img
+          class="w-100 mb-3 position-absolute top-0"
+          src="assets/images/transp2.png"
+          alt="transparente"
+        />
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

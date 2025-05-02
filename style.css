@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Stars and Love';
+    src: url('/assets/fonts/stars-and-love/stars-and-love.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#flores-top {
+    transform: translateY(-10%);
+}
+
+.text-primary {
+    color: #215282 !important;
+}
+
+.text-stars-and-love {
+    font-family: 'Stars and Love', nunito, sans-serif !important;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    background-color: #3cc75f;
+    border-radius: 3px;
+    width: 0%;
+}
+
+.thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #3cc75f;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0%;
+}
+
+.controls i {
+    font-size: 24px;
+    color: #1c355e;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
