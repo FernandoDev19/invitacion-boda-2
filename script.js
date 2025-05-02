@@ -14,9 +14,11 @@ function togglePlay() {
     if (audio.paused) {
         audio.play();
         iconPlay.classList.replace('fa-heart', 'fa-pause');
+        iconPlay.classList.remove('pulse');
     } else {
         audio.pause();
         iconPlay.classList.replace('fa-pause', 'fa-heart');
+        iconPlay.classList.add('pulse');
     }
 }
 
