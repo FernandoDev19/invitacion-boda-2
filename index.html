@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,6 +39,7 @@
     <main class="container-md mx-auto p-0">
       <div class="d-flex flex-column align-items-center gap-2 px-4 mb-5">
         <img
+            loading="lazy"
           class="w-100"
           src="assets/images/flores.png"
           alt="Flores top"
@@ -58,7 +59,7 @@
           nuestra canción</span
         >
 
-        <audio id="audio" src="assets/music/music.mp3"></audio>
+        <audio preload="none" id="audio" src="assets/music/music.mp3"></audio>
         <div class="progress-container" id="progress-container">
           <div class="progress" id="progress"></div>
           <div class="thumb" id="thumb"></div>
@@ -66,15 +67,16 @@
 
         <!-- Controles -->
         <div class="controls">
-          <i class="fas fa-redo" onclick="repetir()"></i>
-          <i class="fas fa-backward" onclick="retroceder()"></i>
-          <i id="play-pause" class="fas fa-heart" onclick="togglePlay()"></i>
-          <i class="fas fa-forward" onclick="adelantar()"></i>
+          <i class="fas fa-redo" onclick="repetir()" role="button" aria-label="Repetir canción"></i>
+          <i class="fas fa-backward" onclick="retroceder()" role="button" aria-label="Retroceder canción"></i>
+          <i id="play-pause" class="fas fa-heart" onclick="togglePlay()" role="button" aria-label="Reproducir canción"></i>
+          <i class="fas fa-forward" onclick="adelantar()" role="button" aria-label="Adelantar canción"></i>
           <i class="fas fa-random"></i>
         </div>
       </div>
 
       <img
+        loading="lazy"
         class="w-100 mb-4"
         src="assets/images/transp3.png"
         alt="pareja transparente"
@@ -97,7 +99,8 @@
       </span>
 
       <div class="d-flex justify-content-center mb-3">
-        <img width="80" src="assets/icons/pareja.png" alt="Pareja icon" />
+        <img
+            loading="lazy" width="80" src="assets/icons/pareja.png" alt="Pareja icon" />
       </div>
 
       <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
@@ -120,13 +123,15 @@
       </div>
 
       <img
+        loading="lazy"
         class="w-100 mb-3"
         src="assets/images/transp1.png"
         alt="Flores transparente"
       />
 
       <div class="d-flex justify-content-center mb-4">
-        <img width="80" src="assets/icons/Anillos.png" alt="Anillos icon" />
+        <img
+            loading="lazy" width="80" src="assets/icons/Anillos.png" alt="Anillos icon" />
       </div>
 
       <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
@@ -193,7 +198,8 @@
 
       <div class="mb-4">
         <div class="d-flex justify-content-center mb-1">
-          <img width="70" src="assets/icons/Iglesia.png" alt="Iglesia icon" />
+          <img
+            loading="lazy" width="70" src="assets/icons/Iglesia.png" alt="Iglesia icon" />
         </div>
         <p class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-4">
           Ceremonia Religiosa
@@ -210,7 +216,8 @@
           Recepción
         </p>
         <div class="d-flex justify-content-center mb-1">
-          <img width="50" src="assets/icons/Brindis.png" alt="Brindis icon" />
+          <img
+            loading="lazy" width="50" src="assets/icons/Brindis.png" alt="Brindis icon" />
         </div>
         <p class="text-secondary text-center">
           Hora: 8:00pm<br />
@@ -220,7 +227,8 @@
       </div>
 
       <div class="d-flex justify-content-center mb-4">
-        <img width="50" src="assets/icons/lugar.png" alt="lugar icon" />
+        <img
+            loading="lazy" width="50" src="assets/icons/lugar.png" alt="lugar icon" />
       </div>
 
       <div class="mb-5">
@@ -229,6 +237,7 @@
         </h2>
         <div class="d-flex justify-content-center mb-1">
           <img
+            loading="lazy"
             width="60"
             src="assets/icons/Código vestimenta.png"
             alt="Código vestimenta icon"
@@ -241,6 +250,7 @@
       </div>
 
       <img
+        loading="lazy"
         class="w-100 mb-3"
         src="assets/images/transp2.png"
         alt="Anillos transparente"
@@ -251,7 +261,8 @@
           Regalos
         </h2>
         <div class="d-flex justify-content-center mb-1">
-          <img width="60" src="assets/icons/regalo.png" alt="Regalo icon" />
+          <img
+            loading="lazy" width="60" src="assets/icons/regalo.png" alt="Regalo icon" />
         </div>
         <p class="text-secondary text-center">Obsequio o Lluvia de sobre</p>
       </div>
@@ -265,11 +276,12 @@
           recordaremos!
         </p>
         <div class="d-flex justify-content-center mb-1">
-          <img width="50" src="assets/icons/sobre.png" alt="Sobre icon" />
+          <img
+            loading="lazy" width="50" src="assets/icons/sobre.png" alt="Sobre icon" />
         </div>
       </div>
 
-      <div class="mb-4 mx-3">
+      <div class="mb-5 mx-3">
         <h2 class="text-center text-primary great-vibes-regular fs-1 mx-2 mb-2">
           Confirmar asistencia
         </h2>
@@ -277,14 +289,16 @@
           Tu presencia es muy importante para nosotros, por favor confirmanos
         </p>
         <div class="d-flex justify-content-center mb-1">
-          <img width="40" src="assets/icons/Whatsapp.png" alt="Whatsapp icon" />
+          <img
+            loading="lazy" width="40" src="assets/icons/Whatsapp.png" alt="Whatsapp icon" />
         </div>
       </div>
 
       <div class="text-secondary mx-3 text-center mb-5">
         <div class="d-flex justify-content-center mb-1">
           <img
-            width="100"
+            loading="lazy"
+            width="150"
             src="assets/images/circulo nombres.png"
             alt="Circulo nombres icon"
           />
@@ -301,6 +315,7 @@
       </p>
       <div class="position-relative overflow-hidden" style="height: 50px;">
         <img
+            loading="lazy"
           class="w-100 mb-3 position-absolute top-0"
           src="assets/images/transp2.png"
           alt="transparente"
