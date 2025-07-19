@@ -39,7 +39,7 @@ audio.addEventListener('timeupdate', () => {
     thumb.style.left = percent + '%';
 });
 
-// Permitir clic en la barra para adelantar
+// Clic en la barra para adelantar
 progressContainer.addEventListener('click', (e) => {
     const rect = progressContainer.getBoundingClientRect();
     const x = e.clientX - rect.left;
